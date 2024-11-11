@@ -16,21 +16,21 @@ export async function GET() {
       {
         params: {
           vs_currency: "usd",
-          ids: "bitcoin,ethereum,tether,binancecoin,solana,xrp,cardano,avalanche",
+          ids: "bitcoin,ethereum,tether,binancecoin,solana,cardano,dogecoin,polkadot,polygon,shibainu,tron,chainlink,uniswap,cosmos,stellar",
           order: "market_cap_desc",
-          per_page: 8,
+          per_page: 15,
           page: 1,
           sparkline: true,
         },
       }
     );
 
-    const priceResponse = getPriceResponse.data;
+    const tablePriceResponse = getPriceResponse.data;
 
-    cacheData = priceResponse;
+    cacheData = tablePriceResponse;
     cacheTimestamp = Date.now();
 
-    return new Response(JSON.stringify(priceResponse), {
+    return new Response(JSON.stringify(tablePriceResponse), {
       status: 200,
       headers: { "Content-Type": "application/json" },
     });

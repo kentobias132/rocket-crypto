@@ -4,6 +4,8 @@ import ExchangeSection from "./pageComponents/Exchange";
 import Test from "./pageComponents/Test";
 // import MarketPrice from "./pageComponents/MarketPrice";
 import MarketPriceWrapper from "./pageComponents/MarketPrice";
+import AboutUs from "./pageComponents/AboutUs";
+import LearnMore from "./pageComponents/LearnMore";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <Test />
       {/* <MarketPrice /> */}
       <MarketPriceWrapper />
+      <AboutUs />
+      <LearnMore />
     </div>
   );
 }

@@ -100,19 +100,19 @@ function MarketPrice() {
         </a>
       </div>
       <div className="flex justify-between py-4">
-        <DropdownMenu className="md:hidden">
-          <DropdownMenuTrigger>Open</DropdownMenuTrigger>
+        <DropdownMenu className="lg:hidden">
+          <DropdownMenuTrigger>View All</DropdownMenuTrigger>
           <DropdownMenuContent>
-            <DropdownMenuLabel>My Account</DropdownMenuLabel>
+            <DropdownMenuLabel>Metaverse</DropdownMenuLabel>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>Profile</DropdownMenuItem>
-            <DropdownMenuItem>Billing</DropdownMenuItem>
-            <DropdownMenuItem>Team</DropdownMenuItem>
-            <DropdownMenuItem>Subscription</DropdownMenuItem>
+            <DropdownMenuItem>Entertainment</DropdownMenuItem>
+            <DropdownMenuItem>Energy</DropdownMenuItem>
+            <DropdownMenuItem>NFT</DropdownMenuItem>
+            <DropdownMenuItem>Gaming.</DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
 
-        <div className="hidden md:flex ">
+        <div className="hidden lg:flex ">
           <Button className="bg-transparent py-0 px-6 rounded-2xl hover:bg-[#3772FF] text-sm hover:text-white text-black dark:text-white ">
             View All
           </Button>

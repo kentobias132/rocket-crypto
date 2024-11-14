@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Rocket
 
-## Getting Started
+Rocket is a sleek and informative landing page that provides up-to-date information on cryptocurrency markets by fetching data from the CoinGecko API. Perfect for both beginners and enthusiasts, Rocket offers real-time data on cryptocurrency prices, market trends, educational resources, and a currency conversion tool.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Features
+
+- **Market Update**: Stay informed with real-time data on cryptocurrency prices, trends, and market statistics, displayed in a table format.
+- **Cryptocurrency Conversion**: Convert your currency to a wide range of cryptocurrencies and get accurate, up-to-date exchange rates.
+- **Video Learning Section**: Watch curated educational videos on cryptocurrency and blockchain technology, pulled directly from YouTube.
+
+---
+
+## Installation
+
+1. **Clone this repository**:
+
+   ```bash
+   git clone https://github.com/yourusername/cryptolanding.git
+   ```
+
+2. **Install dependencies**:
+
+   ```bash
+   cd rocket-crypto
+   npm install
+   npm run dev
+   ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+# API Reference
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Rocket fetches data from the CoinGecko API for real-time cryptocurrency information.
 
-## Learn More
+## Future Enhancements
 
-To learn more about Next.js, take a look at the following resources:
+- **Learn and Earn**: A reward system for users who watch educational videos and complete quizzes.
+- **Personalized Alerts**: Set price alerts for your favorite cryptocurrencies.
+- **News Feed**: Stay updated with the latest cryptocurrency news.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contributing
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Feel free to submit pull requests for new features, bug fixes, or improvements. For major changes, please open an issue first to discuss what you would like to add.
 
-## Deploy on Vercel
+## License
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+MIT License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contact
+
+For questions, suggestions, or feedback, please reach out via LinkedIn or open an issue on GitHub.
+
+Thank you for checking out! Rocket

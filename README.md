@@ -17,7 +17,7 @@ Rocket is a sleek and informative landing page that provides up-to-date informat
 1. **Clone this repository**:
 
    ```bash
-   git clone https://github.com/yourusername/cryptolanding.git
+   git clone https://github.com/kentobias132/rocket-crypto.git
    ```
 
 2. **Install dependencies**:

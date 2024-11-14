@@ -10,8 +10,9 @@ const Hero = () => {
               A trusted and secure cryptocurrency exchange.
             </h1>
             <p className="text-lg  max-w-lg text-gray-600 dark:text-gray-300">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Trade with confidence on a secure, user-friendly crypto platform.
+              Join a community of empowered traders and explore new financial
+              opportunities today!
             </p>
             <Button className="rounded-2xl bg-[#3772FF] hover:bg-blue-700 text-white px-8">
               Trading Now

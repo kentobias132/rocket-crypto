@@ -45,7 +45,7 @@ function Footer() {
               </div>
             </div>
             <div className=" py-10 flex justify-center items-center border-y lg:border-y-0  lg:border-x border-gray-500">
-              <div className="w-[80%] flex flex-col space-y-6 justify-center  items-center lg:flex-row  lg:justify-between">
+              <div className="w-[80%] flex flex-col space-y-6 lg:space-y-0 justify-center  items-center lg:flex-row  lg:justify-between">
                 <div className="flex flex-col ">
                   <h2 className="font-bold text-sm">PRODUCTS</h2>
                   {productsPages.map((page) => (

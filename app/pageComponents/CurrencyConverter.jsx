@@ -86,7 +86,7 @@ function CurrencyConverter() {
             <div className="space-y-6">
               {/* Send Section */}
               <div className="space-y-2">
-                <label className="text-white">You send</label>
+                <label className="font-bold">You send</label>
                 <div className="grid grid-cols-[1fr,auto] gap-2">
                   <Input
                     type="number"
@@ -135,7 +135,7 @@ function CurrencyConverter() {
 
               {/* Receive Section */}
               <div className="space-y-2">
-                <label className="text-white">You receive</label>
+                <label className="font-bold">You receive</label>
                 <div className="grid grid-cols-[1fr,auto] gap-2">
                   <Input
                     type="number"
@@ -186,7 +186,7 @@ function CurrencyConverter() {
                 )}
               </Button>
             </div>
-            <ToastContainer position="bottom-right" theme="dark" />
+            {/* <ToastContainer position="bottom-right" theme="dark" /> */}
           </div>
           <div
             data-aos="fade-right"

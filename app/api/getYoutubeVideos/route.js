@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 import axios from "axios";
 
 export async function GET() {
-  const apiKey = process.env.YOUTUBE_API_KEY;
+  const apiKey = process.env.NEXT_PUBLIC_YOUTUBE_API_KEY;
   const playlistID = "PLXlwdgXOL3wp2qgZxubPWis_s2EP_6ghR";
   const maxResults = 4;
 

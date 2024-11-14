@@ -63,7 +63,7 @@ function CurrencyConverter() {
 
   const getCurrencyIcon = (code) => {
     switch (code) {
-      case "BTC":
+      case "USDT":
         return "₿";
       case "NGN":
         return "₦";

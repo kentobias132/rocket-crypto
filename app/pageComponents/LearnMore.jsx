@@ -1,4 +1,3 @@
-// components/LearnMore.js
 "use client";
 import React, { useState, useEffect } from "react";
 import axios from "axios";
@@ -8,12 +7,6 @@ function LearnMore() {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
   const [selectedVideo, setSelectedVideo] = useState(null);
-
-  //   let call = 1;
-
-  //   function refresh() {
-  //     return (call += 1);
-  //   }
 
   useEffect(() => {
     fetchVideos();

@@ -44,6 +44,11 @@ function CurrencyConverter() {
     setToCurrency(fromCurrency);
   };
 
+  const handleAmountChange = (event) => {
+    setAmount(event.target.value);
+    setConvertedAmount(0);
+  };
+
   const handleConvert = () => {
     setIsLoading(true);
     setError("");
@@ -53,7 +58,11 @@ function CurrencyConverter() {
       const toCurrencyRate =
         currencies.find((c) => c.code === toCurrency)?.rate || 1;
       const conversionRate = toCurrencyRate / fromCurrencyRate;
-      setConvertedAmount((amount * conversionRate).toFixed(2));
+      const newConverted = (amount * conversionRate).toFixed(2);
+      setConvertedAmount(newConverted);
+      toast(
+        `You have converted ${amount} ${fromCurrency} to ${newConverted} ${toCurrency}`
+      );
     } catch (error) {
       setError("An error occurred during conversion");
     } finally {
@@ -91,7 +100,7 @@ function CurrencyConverter() {
                   <Input
                     type="number"
                     value={amount}
-                    onChange={(e) => setAmount(Number(e.target.value))}
+                    onChange={handleAmountChange}
                     className="bg-gray-200 outline-none text-black text-xl h-14"
                   />
                   <Select value={fromCurrency} onValueChange={setFromCurrency}>
@@ -177,7 +186,7 @@ function CurrencyConverter() {
               <Button
                 onClick={handleConvert}
                 disabled={isLoading}
-                className="w-full h-14 text-lg bg-[#192c81] hover:bg-[#12205c]"
+                className="w-full h-14 text-lg text-white bg-[#192c81] hover:bg-[#12205c]"
               >
                 {isLoading ? (
                   <Loader2 className="h-6 w-6 animate-spin" />
@@ -186,7 +195,7 @@ function CurrencyConverter() {
                 )}
               </Button>
             </div>
-            {/* <ToastContainer position="bottom-right" theme="dark" /> */}
+            <ToastContainer position="bottom-right" theme="dark" />
           </div>
           <div
             data-aos="fade-right"
